@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('/images/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background: #EFB036;
+  color: white;
+  padding: 10px;
+  padding-top: 30px;
+  font-size: 24px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.body {
+  flex: 1;
+  position: relative;
+  padding: 20px;
+}
+
+.note {
+  position: absolute;
+  background: #EFB036;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  min-width: 200px;
+  max-width: 250px;
+  word-wrap: break-word;
+  font-size: 14px;
+  color: #333;
+  transition: transform 0.2s;
+}
+
+.note:hover {
+  transform: scale(1.02);
+}
+
+.note button {
+  border: none;
+  background: transparent;
+  color: #888;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 5px;
+  transition: color 0.2s;
+}
+
+.note button:hover {
+  color: #333;
+}
+
+.note .controls {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 5px;
+}
+
+.note-editor {
+  position: absolute;
+  background: #23486A;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  width: 250px;
+}
+
+.note-editor textarea {
+  background-color: #3B6790;
+  margin-left:-6px;
+  width: 100%;
+  height: 60px;
+  border: 1px solid #3B6790;
+  border-radius: 4px;
+  resize: none;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.note-editor button {
+  margin-top: 5px;
+  background: #4C7B8B;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.note-editor button:hover {
+  background: #4C7B8B;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background: #EFB036;
+  color: white;
+}
