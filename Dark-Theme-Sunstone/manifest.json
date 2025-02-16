@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Dark Theme Extension",
+  "version": "1.0",
+  "description": "Apply a dark theme to the website.",
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://hub.sunstone.in/"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}

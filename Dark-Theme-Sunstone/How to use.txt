@@ -1,0 +1,7 @@
+1. Go to "chrome://extensions/".
+2. On the top right corner, enable 'Developer Mode'.
+3. On the top left corner, click on 'Load Unpacked'.
+4. Select the file 'Dark-Theme-Sunstone'.
+
+
+And to remove the extension, you can go back to "chrome://extensions/" and disable it.
